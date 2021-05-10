@@ -11,19 +11,15 @@ namespace Triangulo
         private int x, y, z;
         public Triangulo(int x, int y, int z)
         {
-            this.X = x;
-            this.Y = y;
-            this.Z = z;
+            this.x = x;
+            this.y = y;
+            this.z = z;
         }
-        public int X { get => x; set => x = value; }
-        public int Y { get => y; set => y = value; }
-        public int Z { get => z; set => z = value; }
-
         public bool ValidaTriangulo()
         {
             bool validacao = false;
 
-            if (X == 0 || Y == 0 || Z == 0)
+            if (x == 0 || y == 0 || z == 0)
                 validacao = false;
             else
                 validacao = true;
@@ -35,9 +31,9 @@ namespace Triangulo
         {
             string tipoTriangulo = null;
 
-            if (X == Y && X == Z && Y == Z)
+            if (x == y && x == z && y == z)
                 tipoTriangulo = "Equilátero\n";
-            else if ((X == Y & X != Z) || (X == Z && X != Y) || (Y == Z & X != Z))
+            else if ((x == y & x != z) || (x == z && x != y) || (y == z & x != z))
                 tipoTriangulo = "Isosceles\n";
             else
                 tipoTriangulo = "Escaleno\n";
