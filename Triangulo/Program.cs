@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Triangulo
 {
@@ -12,11 +8,11 @@ namespace Triangulo
         {
             while (true)
             {
-                Console.WriteLine("Digite o vértice X do triângulo");
+                Console.WriteLine("Digite o lado X do triângulo");
                 int x = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine("\nDigite o vértice Y do triângulo");
+                Console.WriteLine("\nDigite o lado Y do triângulo");
                 int y = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine("\nDigite o vértice Z do triângulo");
+                Console.WriteLine("\nDigite o lado Z do triângulo");
                 int z = Convert.ToInt32(Console.ReadLine());
 
                 Triangulo triangulo = new Triangulo(x, y, z);
@@ -29,7 +25,7 @@ namespace Triangulo
                 else
                 {
                     Console.Clear();
-                    Console.WriteLine("Triângulo inválido!");                    
+                    Console.WriteLine("Triângulo inválido!\n");                    
                 }
                 continue;
             }
