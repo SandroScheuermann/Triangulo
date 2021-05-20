@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{CDC5BBA1-15B4-4D71-8872-5E2B92D6CBCC}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Triangulo</RootNamespace>
-    <AssemblyName>Triangulo</AssemblyName>
+    <RootNamespace>Triangulo.ConsoleApp</RootNamespace>
+    <AssemblyName>Triangulo.ConsoleApp</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
